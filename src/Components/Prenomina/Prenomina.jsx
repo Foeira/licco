@@ -161,7 +161,7 @@ const Prenomina = () => {
   return (
     <div>
       <h2>Formato de Prenomina</h2>
-      <h1>VERSION 0.0</h1>
+      <h1>VERSION 1.1 despues de cerrar y abrir</h1>
       <div className="col6">
         <label htmlFor="start-date">Fecha Inicio:</label>
         <input type="text" id="start-date" ref={startDateRef} />
