@@ -1,7 +1,9 @@
 
 import './App.css';
 import CountDashboard from './Components/Dashboard/TablaDiaria';
-import Prenomina from './Components/Prenomina/Prenomina'
+import PrenominaR from './Components/Prenomina/PRenomina_R';
+
+
 
 
 function App() {
@@ -9,8 +11,8 @@ function App() {
     <div className="App">
 
       <CountDashboard/>
-      <Prenomina/>
- 
+      <PrenominaR/>
+     
     </div>
   );
 }
