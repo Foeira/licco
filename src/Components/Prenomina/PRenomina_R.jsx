@@ -64,8 +64,9 @@ const PrenominaR = () => {
 
     const dataUri = XLSX.write(workbook, { bookType: 'xlsx', type: 'base64' });
     const link = document.createElement('a');
+    const downloadName = `${transformedData[0]?.contract_name || 'data'}_${startDate}-${endDate}`;
     link.href = `data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,${dataUri}`;
-    link.download = 'data.xlsx';
+    link.download = `${downloadName}.xlsx`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -74,7 +75,7 @@ const PrenominaR = () => {
 
   const fetchData = async (startDate, endDate) => {
     const baseUrl = 'https://894bdij9ij.execute-api.us-east-1.amazonaws.com/licco/asistencias/';
-    const url = `${baseUrl}${startDate}/${endDate}/9`;
+    const url = `${baseUrl}${startDate}/${endDate}/7`;
 
     try {
       const response = await fetch(url);
