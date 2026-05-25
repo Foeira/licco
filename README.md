@@ -1,4 +1,6 @@
 # Licco ESD FaceAuth Attendance & HR Management System
+# https://licco.com.mx/
+
 
 An enterprise-grade, full-stack web application built on the MERN stack that automates employee attendance tracking using facial recognition. The platform provides Human Resources departments with comprehensive tools to manage incidents, analyze employee behavior, and generate pre-payroll reports.
 
